@@ -1,8 +1,15 @@
 // this will be the main file that controls the web application server
 const express = require('express')
 const apiRoutes = require('./routes/api')
+const path = require('path')
+const { stat } = require('fs')
 
+// Create web application server
 const app = express()
+
+const staticFilePath = path.join(__dirname, 'client', 'dist')
+const staticFiles = express.static(staticFilePath)
+app.use('/', staticFiles) // request to home page, serve static file - the Vue app index.html
 
 app.use(express.json())
 
