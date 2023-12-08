@@ -17,7 +17,7 @@ app.use('/api', apiRoutes)
 
 // anoter route handler to handle the request
 app.use(function(req, res, next) {
-    res.status(404).send('Sorry, not found.')
+    res.status(404).send('Sorry, pageaz web not found.')
 // todo
 })
 

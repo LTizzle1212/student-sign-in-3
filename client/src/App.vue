@@ -28,6 +28,7 @@ onMounted( () => {
 
     <!-- 3 components added from above-->
 
+    <h1>Student Sign In</h1>
     <StudentMessage></StudentMessage>
     <StudentTable></StudentTable>
     <NewStudentForm></NewStudentForm>
@@ -35,6 +36,10 @@ onMounted( () => {
 </template>
 
 <style scoped>
+
+h1 {
+    margin: 10px;
+}
 
 /* CSS for this component here */
 
