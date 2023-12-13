@@ -46,6 +46,7 @@ export const useStudentStore = defineStore('students', () => {
     //     mostRecentStudent.value = {} // reset most recent message
     }
 
+    
 
     function arrivedOrLeft(student) {
         const editStudentAPI = mande(`/api/students/${student.id}`)
